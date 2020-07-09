@@ -37,21 +37,21 @@ Below is a fully functioning example.
       "name": "lxc-trusty",
       "config_file": "/tmp/lxc/config",
       "template_name": "ubuntu",
-      "template_environment_vars": ["SUITE=trusty"]
+      "template_parameters": ["-r", "trusty"],
     },
     {
       "type": "lxc",
       "name": "lxc-xenial",
       "config_file": "/tmp/lxc/config",
       "template_name": "ubuntu",
-      "template_environment_vars": ["SUITE=xenial"]
+      "template_parameters": ["-r", "xenial"],
     },
     {
       "type": "lxc",
-      "name": "lxc-jessie",
+      "name": "lxc-stretch",
       "config_file": "/tmp/lxc/config",
       "template_name": "debian",
-      "template_environment_vars": ["SUITE=jessie"]
+      "template_parameters": ["-r", "stretch"],
     },
     {
       "type": "lxc",
